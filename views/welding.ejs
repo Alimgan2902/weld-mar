@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body ng-app="baseApp">
+    <% include partials/template/header.ejs %>
+    <main class="container-fluid">
+      <% include partials/template/menu.ejs %>
+      <div class="row"  ng-controller="base">
+        <div class="col-lg-2">
+          <% include partials/template/left_menu.ejs %>
+        </div>
+        <div class="col-lg-10">
+          <% include partials/content/welding.ejs %>
+          <% include partials/content/catalog.ejs %>
+        </div>
+      </div>
+    </main>
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefault.ejs %>
+  </body>
+</html>

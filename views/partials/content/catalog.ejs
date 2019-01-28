@@ -1,0 +1,24 @@
+<section class="catalog_page">
+	<h4>Каталог</h4>
+	<div class="row list_card">
+		<div class="col-lg-3 card_tovar bg_shadow" ng-repeat="item in catalog">
+			<div ng-click="showCard(item)">
+				<img src="/catalog/{{item.pic}}.png">
+				<h4>{{item.name}}</h4>
+				<p>Цена: <span>{{item.price}}</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="row main_card ">
+		<div class="card_tovar bg_shadow">
+				<img src="/catalog/{{card.pic}}.png">
+				<h4>{{card.name}}</h4>
+				<p class="text-primary">Цена: <span>{{card.price}}</span></p>
+				<h6 class="text-success">Описание:</h6>
+				<p>Далее идет описание товара и т.д.</p>
+				<h6 class="text-success">Технические характеристики</h6>
+				<p>Далее идут технические характеристики и т.д.</p>
+			</div>
+		</div>
+	</div>
+</section>
